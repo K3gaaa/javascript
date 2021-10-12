@@ -7,9 +7,12 @@ import styles from'./App.module.css';
 const todoItem = 'Приложение';
 const App = () => {
     const items = [
-    {value: 'Пройти очередной урок'},
-    {value: 'Убраться'},
-    {value: 'По играть'}
+    {value: 'Пройти очередной урок',
+        isDone: true},
+    {value: 'Убраться',
+        isDone: true},
+    {value: 'По играть',
+        isDone: false}
 ];
     return (
     <div className={styles.wrap}>
