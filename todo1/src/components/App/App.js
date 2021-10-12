@@ -2,6 +2,7 @@ import React from 'react';
 import ItemList from '../ItemList/ItemList';
 import InputItem from '../InputItem/InputItem';
 import Footer from "../Footer/Footer";
+import './App.css';
 
 const todoItem = 'Приложение';
 const App = () => {
@@ -11,8 +12,8 @@ const App = () => {
     {value: 'По играть'}
 ];
     return (
-    <div>
-        <h1>Важные дела:</h1>
+    <div className="wrap">
+        <h1 className="wrap__title">Важные дела:</h1>
         <InputItem />
         <ItemList items={items} />
         <Footer count={3} />
